@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-size: cover; /* Ensures the background covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+
+#why {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url("./why-us-icon.jpg");
+    color: white; /* Ensures text is visible */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Adds text shadow for better readability */
+
+}
+
+#why-list {
+    text-align: center; /* Aligns the text to the left */
+    list-style-position: inside; /* Places bullets inside the list */
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block; /* Centers the list within the section */
+}
+
+.hero {
+    padding: 100px 20px;
+    background-image: url('./about-icon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white; /* Ensures text stands out against the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Adds text shadow for better readability */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(223, 223, 223, 0); /* Adds a dark overlay for opacity */
+    z-index: 1; /* Ensures the overlay sits below the text */
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow to the button */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.cta-btn:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 1); /* Darker shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #085bae;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn:hover {
+    background-color: #218838;
+}
