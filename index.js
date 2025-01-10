@@ -1,7 +1,9 @@
 var submit = document.getElementById("submit");
 const URL = "https://lamp.ms.wits.ac.za/home/s2690851/Tutoring/client.php";
 
-submit.addEventListener("click", function() {
+submit.addEventListener("click", function(event) {
+    event.preventDefault();
+    
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
